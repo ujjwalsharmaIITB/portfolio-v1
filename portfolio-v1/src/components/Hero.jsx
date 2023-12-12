@@ -58,7 +58,7 @@ const Hero = () => {
           <a href="#about">
             <div className="w-[35] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
               {/* framer motion motion  */}
-              <motion.dev
+              <motion.div
                 animate={{
                   y: [0, 24, 0],
                 }}
