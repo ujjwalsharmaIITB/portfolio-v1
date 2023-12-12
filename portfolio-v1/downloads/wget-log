@@ -1,0 +1,11 @@
+--2023-12-12 07:27:28--  https://drive.usercontent.google.com/download?id=12bREYOjT7BYLeZZ2BB0_RwZGh_kGQOiU
+Resolving drive.usercontent.google.com (drive.usercontent.google.com)... 142.250.192.1, 2404:6800:4009:820::2001
+Connecting to drive.usercontent.google.com (drive.usercontent.google.com)|142.250.192.1|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6010782 (5.7M) [application/octet-stream]
+Saving to: ‘download?id=12bREYOjT7BYLeZZ2BB0_RwZGh_kGQOiU’
+
+               download?id=12   0%[                                                ]       0  --.-KB/s                             download?id=12b   7%[==>                                             ] 436.49K  2.13MB/s                            download?id=12bR  80%[=====================================>          ]   4.60M  11.5MB/s               download?id=12bREYOjT7BYLeZZ2 100%[===============================================>]   5.73M  13.7MB/s    in 0.4s    
+
+2023-12-12 07:27:31 (13.7 MB/s) - ‘download?id=12bREYOjT7BYLeZZ2BB0_RwZGh_kGQOiU’ saved [6010782/6010782]
+

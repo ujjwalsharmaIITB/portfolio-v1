@@ -1,0 +1,17 @@
+portfolio-v1
+npm create vite@latest  ./ --  --template react
+
+npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser framer-motion react-router-dom
+
+
+install tailwind css
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm install --legacy-peer-deps react-typed
+
+assets -
+wget https://drive.usercontent.google.com/download?id=12bREYOjT7BYLeZZ2BB0_RwZGh_kGQOiU&export=download&confirm=t&uuid=e477b194-99bb-44a1-b45c-9575b18dd8d3
+components -
+wget https://drive.usercontent.google.com/download?id=1ydqDpikc8ZMLV-cxOAK6t_5YP4NobZNh&export=download&confirm=t&uuid=ccacd672-a4f4-4393-aaaa-022d4fce7e4e
+public -
+wget https://drive.usercontent.google.com/download?id=1aubhurQhK-egx6NTzpnspTnLuHHG6_QW&export=download&confirm=t&uuid=7f91f49d-88ce-43c3-8489-f895d558a201
