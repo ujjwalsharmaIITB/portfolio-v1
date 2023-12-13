@@ -13,7 +13,9 @@ import CanvasLoader from "../Loader";
 const Computers = () => {
   // import 3d objects
   console.log("loading computer ... ");
-  const computer = useGLTF("/desktop_pc/scene.gltf");
+  const basepath = import.meta.env.BASE_URL;
+  console.log(basepath);
+  const computer = useGLTF(basepath + "desktop_pc/scene.gltf");
 
   return (
     <mesh>
