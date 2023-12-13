@@ -20,6 +20,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import linuximg from "./tech/linux.png";
+import pythonimg from "./tech/python.png";
+import tensorflowimg from "./tech/tensorflow.png";
+import pytorchimg from "./tech/pytorch.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -72,4 +76,8 @@ export {
   jpmc_logo,
   cfilt_logo,
   earlysalary_logo,
+  linuximg,
+  pythonimg,
+  tensorflowimg,
+  pytorchimg,
 };

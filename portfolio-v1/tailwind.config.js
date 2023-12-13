@@ -21,6 +21,8 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
         // "hero-pattern": "url('/images/bg/1.png')",
+        "education-pattern": "url('/images/bg/2.jpeg')",
+        "experience-pattern": "url('/images/bg/2.jpeg')",
       },
     },
   },

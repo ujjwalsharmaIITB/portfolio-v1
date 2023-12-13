@@ -22,8 +22,12 @@ function App() {
             <Hero />
           </div>
           <About />
-          <Experience />
-          <Education />
+          <div className="bg-experience-pattern">
+            <Experience />
+          </div>
+          <div className="bg-education-pattern">
+            <Education />
+          </div>
           <Tech />
           <Works />
           <Feedbacks />

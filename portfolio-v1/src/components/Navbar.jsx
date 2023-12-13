@@ -17,8 +17,7 @@ import { act } from "@react-three/fiber";
 function getLogo() {
   var logos = [logo1, logo2, logo3, logo4, logo5];
   var logo = logos[Math.floor(Math.random() * logos.length)];
-  // return logo;
-  return logos[0];
+  return logo;
 }
 
 // *************
@@ -55,7 +54,7 @@ const Navbar = () => {
           }}
         >
           {/* visit logo.com and create your logo */}
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={logo} alt="logo" className="w-20 h-15 rounded-full" />
           <p
             className="text-white text-[18px]
           font-bold cursor-pointer"
