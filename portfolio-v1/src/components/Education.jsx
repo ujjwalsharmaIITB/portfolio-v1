@@ -59,7 +59,7 @@ const Education = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Where I Have Studied</p>
-        <h2 className={styles.sectionHeadText}>Educations</h2>
+        <h2 className={styles.sectionHeadText}>Education</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">
