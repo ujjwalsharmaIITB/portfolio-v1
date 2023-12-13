@@ -15,3 +15,22 @@ components -
 wget https://drive.usercontent.google.com/download?id=1ydqDpikc8ZMLV-cxOAK6t_5YP4NobZNh&export=download&confirm=t&uuid=ccacd672-a4f4-4393-aaaa-022d4fce7e4e
 public -
 wget https://drive.usercontent.google.com/download?id=1aubhurQhK-egx6NTzpnspTnLuHHG6_QW&export=download&confirm=t&uuid=7f91f49d-88ce-43c3-8489-f895d558a201
+
+
+
+
+
+# for deployment this is important
+
+To deploy with basepath
+  npm run build -- --base=/basepath
+  or
+  vite build --base=/basepath
+
+  this will update all the css , js and html but will not include for other dynamic links 
+  like useGLTF...
+  so for that you need. to add the basepath to all those dynamic folders
+
+
+  # see this 
+  https://vitejs.dev/guide/build.html#public-base-path
