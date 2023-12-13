@@ -30,6 +30,13 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import iitb_logo from "./IITB_logo.png";
+import vnit_logo from "./VNIT_logo.jpeg";
+import gautam_logo from "./gautam_logo.jpg";
+import jpmc_logo from "./jpmc_logo.jpg";
+import cfilt_logo from "./cfilt_logo.png";
+import earlysalary_logo from "./earlysalary_logo.png";
+
 export {
   logo,
   backend,
@@ -59,4 +66,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  iitb_logo,
+  vnit_logo,
+  gautam_logo,
+  jpmc_logo,
+  cfilt_logo,
+  earlysalary_logo,
 };

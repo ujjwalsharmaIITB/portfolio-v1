@@ -23,6 +23,12 @@ import {
   jobit,
   tripguide,
   threejs,
+  iitb_logo,
+  vnit_logo,
+  gautam_logo,
+  jpmc_logo,
+  cfilt_logo,
+  earlysalary_logo,
 } from "../assets";
 
 export const navLinks = [
@@ -33,6 +39,10 @@ export const navLinks = [
   {
     id: "experience",
     title: "Experiences",
+  },
+  {
+    id: "education",
+    title: "Education",
   },
   {
     id: "contact",
@@ -118,7 +128,7 @@ const experiences = [
   {
     title: "Research Student",
     company_name: "CFILT - IIT Bombay",
-    icon: starbucks,
+    icon: cfilt_logo,
     iconBg: "#383E56",
     date: "July 2023 - Present",
     points: [
@@ -126,23 +136,11 @@ const experiences = [
       "Developing and maintaining web applications for NLP Tools at IIT Bombay.",
     ],
   },
-  {
-    title: "M.Tech",
-    company_name: "IIT Bombay",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "July 2023 - Present",
-    points: [
-      "M.Tech Student in Department Of Computer Science at IIT Bombay.",
-      "Expanding my knowledge in the field of Machine Learning, Deep Learning and Natural Language Processing.",
-      "Research Student at CFILT - IIT Bombay.",
-      "Participatinig in cultural activities and sports at IIT Bombay.",
-    ],
-  },
+
   {
     title: "Software Engineer 1",
     company_name: "JP Morgan Chase & Co.",
-    icon: shopify,
+    icon: jpmc_logo,
     iconBg: "#383E56",
     date: "August 2022 - July 2023",
     points: [
@@ -155,16 +153,69 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Software Engineer Intern",
+    company_name: "Early Salary",
+    icon: earlysalary_logo,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "May 2021 - July 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Full stack Developer ( Intern )",
+      "Developing and maintaining an internal web application using React.js and Spring Boot.",
+      "Collaborating with cross-functional teams including designers and other developers to create the website.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+];
+
+const educations = [
+  {
+    title: "M.Tech - Computer Science",
+    institute_name: "IIT Bombay",
+    icon: iitb_logo,
+    iconBg: "#383E56",
+    date: "July 2023 - Present",
+    points: [
+      "M.Tech Student in Department Of Computer Science at IIT Bombay.",
+      "Expanding my knowledge in the field of Machine Learning, Deep Learning and Natural Language Processing.",
+      "Research Student at CFILT - IIT Bombay.",
+      "Participatinig in cultural activities and sports at IIT Bombay.",
+    ],
+  },
+  {
+    title: "B.Tech - Computer Science",
+    institute_name: "VNIT Nagpur",
+    icon: vnit_logo,
+    iconBg: "#383E56",
+    date: "July 2018 - May 2022",
+    points: [
+      "B.Tech Student in Department Of Computer Science at IIT Bombay.",
+      "Gained Knowledge in the field of Computer Science and Engineering.",
+      "Gained Knowledge and Experience in CS Fundamentals, Data Structures and Algorithms, Artificial Intelligence.",
+      "Learned languages like C, C++, Java, Python, JavaScript, Scala.",
+      "Learned and worked on various technologies/framewords like React.js, Node.js, MongoDB, Express.js, etc.",
+      "Also learned about various technologies like Git, Docker, Machine Learning, Deep Learning, Natural Language Processing, Blockchain, Cryptocurrency etc.",
+    ],
+  },
+  {
+    title: "12th - Science",
+    institute_name: "Gautam International Sr. Sec. School",
+    icon: gautam_logo,
+    iconBg: "#383E56",
+    date: "2017",
+    points: [
+      "Learned about various subjects like Physics, Chemistry, Mathematics.",
+      "Got intrested in Mathematics and Computer Science.",
+    ],
+  },
+  {
+    title: "10th - Science",
+    institute_name: "Gautam International Sr. Sec. School",
+    icon: gautam_logo,
+    iconBg: "#383E56",
+    date: "2015",
+    points: [
+      "Learned about various subjects like Physics, Chemistry, Mathematics, Biology, English, Hindi, Social Science.",
+      "Got intrested in Physics and Mathematics.",
     ],
   },
 ];
@@ -262,4 +313,11 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  educations,
+  testimonials,
+  projects,
+};

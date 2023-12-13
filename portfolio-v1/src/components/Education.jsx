@@ -11,61 +11,61 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
 
-import { experiences } from "../constants";
+import { educations } from "../constants";
 
 import { SectionWrapper } from "../hoc";
 
 import { textVariant } from "../utils/motion";
 import Roller from "./Roller";
 
-const ExperienceCard = ({ experience }) => {
+const EducationCard = ({ education }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{ background: "#1d1836", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
+      date={education.date}
+      iconStyle={{ background: education.iconBg }}
       icon={
         <div className="flex justify-center items-center w-full h-full">
           <img
-            src={experience.icon}
-            alt={experience.company_name}
+            src={education.icon}
+            alt={education.institute_name}
             className="w-[70%] h-[70%] object-contain absolute"
           />
         </div>
       }
     >
       <div>
-        <h3 className="text-white font-bold text-[24px]">{experience.title}</h3>
+        <h3 className="text-white font-bold text-[24px]">{education.title}</h3>
         <p
           className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
-          {experience.company_name}
+          {education.institute_name}
         </p>
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
-        {experience.points.map((point, index) => (
-          <li key={`${experience.company_name}-${index}`}>{point}</li>
+        {education.points.map((point, index) => (
+          <li key={`${education.institute_name}-${index}`}>{point}</li>
         ))}
       </ul>
     </VerticalTimelineElement>
   );
 };
 
-const Experience = () => {
+const Education = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I Have Done So Far ...</p>
-        <h2 className={styles.sectionHeadText}>Experiences</h2>
+        <p className={styles.sectionSubText}>Where I Have Studied</p>
+        <h2 className={styles.sectionHeadText}>Educations</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
+          {educations.map((education, index) => (
+            <EducationCard key={index} education={education} />
           ))}
         </VerticalTimeline>
       </div>
@@ -73,4 +73,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "experience");
+export default SectionWrapper(Education, "education");

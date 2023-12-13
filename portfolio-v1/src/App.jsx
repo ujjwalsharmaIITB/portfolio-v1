@@ -9,6 +9,7 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Education,
 } from "./components";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           </div>
           <About />
           <Experience />
+          <Education />
           <Tech />
           <Works />
           <Feedbacks />
