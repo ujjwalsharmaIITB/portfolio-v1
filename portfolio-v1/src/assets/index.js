@@ -40,6 +40,9 @@ import gautam_logo from "./gautam_logo.jpg";
 import jpmc_logo from "./jpmc_logo.jpg";
 import cfilt_logo from "./cfilt_logo.png";
 import earlysalary_logo from "./earlysalary_logo.png";
+import coling_2025_logo from "./coling_2025.png"
+import emnlp_2025_logo from "./emnlp_2025_logo_v1.png"
+
 
 export {
   logo,
@@ -80,4 +83,6 @@ export {
   pythonimg,
   tensorflowimg,
   pytorchimg,
+  coling_2025_logo,
+  emnlp_2025_logo
 };

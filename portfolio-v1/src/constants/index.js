@@ -33,6 +33,8 @@ import {
   pythonimg,
   tensorflowimg,
   pytorchimg,
+  coling_2025_logo,
+  emnlp_2025_logo
 } from "../assets";
 
 export const navLinks = [
@@ -231,6 +233,40 @@ const educations = [
     ],
   },
 ];
+
+
+const publications = [
+  {
+    title: "IndiGEC: Multilingual Grammar Error Correction for Low-Resource Indian Languages",
+    venue: "EMNLP 2025",
+    abstract: "Grammatical Error Correction (GEC) for low-resource Indic languages faces significant challenges due to the scarcity of annotated data. In this work, we introduce the Mask-Translate&Fill (MTF) framework, a novel approach for generating high-quality synthetic data for GEC using only monolingual corpora. MTF leverages a machine translation system and a pretrained masked language model to introduce synthetic errors and tries to mimic errors made by second-language learners. Our experimental results on English, Hindi, Bengali, Marathi, and Tamil demonstrate that MTF consistently outperforms other monolingual synthetic data generation methods and achieves performance comparable to the Translation Language Modeling (TLM)-based approach, which uses a bilingual corpus, in both independent and multilingual settings. Under multilingual training, MTF yields significant improvements across Indic languages, with particularly notable gains in Bengali and Tamil, achieving +1.6 and +3.14 GLEU over the TLM-based method, respectively. To support further research, we also introduce the IndiGEC Corpus, a high-quality, human-written, manually validated GEC dataset for these four Indic languages, comprising over 8,000 sentence pairs with separate development and test splits.",
+    url: "https://aclanthology.org/2025.emnlp-main.1139/",
+    author: "Ujjwal Sharma and Pushpak Bhattacharyya",
+    booktitle: "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    logo: emnlp_2025_logo,
+    date: "Nov, 2025",
+    iconBg: "#383E56",
+    place: "Abu Dhabi"
+  },
+   {
+    title: "Hi-GEC: Hindi Grammar Error Correction in Low Resource Scenario",
+    venue: "COLING 2025",
+    abstract: "Automated Grammatical Error Correction (GEC) has been extensively researched in Natural Language Processing (NLP), primarily focusing on English and other resource-rich languages. This paper shifts the focus to GEC for a scarcely explored low-resource language, specifically Hindi, which presents unique challenges due to its intricate morphology and complex syntax. To address data resource limitations, this work explores various GEC data generation techniques. Our research introduces a carefully extracted and filtered, high-quality dataset, HiWikiEdits, which includes human-edited 8,137 instances sourced from Wikipedia, encompassing 17 diverse grammatical error types, with annotations performed using the ERRANT toolkit. Furthermore, we investigate Round Trip Translation (RTT) using diverse languages for synthetic Hindi GEC data generation, revealing that leveraging high-resource linguistically distant language for error generation outperforms mid-resource linguistically closer languages. Specifically, using English as a pivot language resulted in a 6.25% improvement in GLEU score compared to using Assamese or Marathi. Finally, we also investigate the neural model-based synthetic error-generation technique and show that it achieves comparable performance to other synthetic data generation methods, even in low-resource settings.",
+    url: "https://aclanthology.org/2025.coling-main.406/",
+    author: "Ujjwal Sharma and Pushpak Bhattacharyya",
+    booktitle: "Proceedings of the 31st International Conference on Computational Linguistics",
+    logo: coling_2025_logo,
+    data: "Jan, 2025",
+    iconBg: "#383E56",
+    place: "Suzhou, China"
+  }
+
+]
+
+
+
+
+
 
 const testimonials = [
   {

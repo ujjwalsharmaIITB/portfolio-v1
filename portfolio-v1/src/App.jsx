@@ -10,6 +10,7 @@ import {
   Works,
   StarsCanvas,
   Education,
+  Publication,
 } from "./components";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <div className="bg-education-pattern">
             <Education />
           </div>
+          <Publication />
           <Tech />
           <Works />
           <Feedbacks />
