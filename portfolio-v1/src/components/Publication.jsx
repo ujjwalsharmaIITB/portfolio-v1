@@ -26,11 +26,14 @@ const PublicationCard = ({ publication }) => {
       date={publication.date}
       iconStyle={{ background: publication.iconBg }}
       icon={
+        // need to make this icon bigger
+
+
         <div className="flex justify-center items-center w-full h-full">
           <img
             src={publication.logo}
             alt={publication.venue}
-            className="w-[70%] h-[70%] object-contain absolute"
+            className="w-[80%] h-[80%] object-contain"
           />
         </div>
       }
@@ -41,13 +44,15 @@ const PublicationCard = ({ publication }) => {
           className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
-          {publication.place}
+          {publication.venue} || {publication.place}
         </p>
       </div>
 
-      {/* need to create a Abstract component with scrolling effect */}
       <div className="mt-5">
-        <Roller text={publication.abstract} />
+        <p className="text-white font-bold text-[18px]">Abstract:</p>
+        <p className="text-secondary text-[14px] max-h-60 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900"> {publication.abstract} </p>
+        {/* link to the paper */}
+        <p className="text-white font-bold text-[18px] mt-4"><a href={publication.url} target="_blank" rel="noopener noreferrer">Link to Paper</a></p>
       </div>
 
     </VerticalTimelineElement>
@@ -58,7 +63,7 @@ const Publication = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What have I Published</p>
+        {/* <p className={styles.sectionSubText}>What have I Published</p> */}
         <h2 className={styles.sectionHeadText}>Publications</h2>
       </motion.div>
 
@@ -73,4 +78,4 @@ const Publication = () => {
   );
 };
 
-export default SectionWrapper(Publication, "publications");
+export default SectionWrapper(Publication, "publication");

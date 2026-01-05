@@ -17,8 +17,11 @@ const Works = () => {
         <h2 className={styles.sectionHeadText}>Projects</h2>
       </motion.div>
 
+
+
       <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionSubText}>Coming Soon ...</h2>
+        {/* add github icon as well */}
+        <h2 className={styles.sectionSubText}>Checkout my <a href="https://github.com/ujjwalsharmaIITB" target="_blank" rel="noopener noreferrer" className="text-white underline">GitHub</a> for more projects!</h2>
       </motion.div>
     </>
   );

@@ -13,11 +13,10 @@ import Roller from "./Roller";
 const Hero = () => {
   const name = "Ujjwal";
   const roles = [
-    "Learner",
-    "Computer Science Student",
-    "Deep Learning Enthusiast",
-    "Natural Language Processing Student",
-    "Natural Language Processing Enthusiast",
+    "Learner.",
+    "Computer Science Student.",
+    "Deep Learning Enthusiast.",
+    "Natural Language Processing Student and An Aspiring Researcher.",
   ];
 
   return (

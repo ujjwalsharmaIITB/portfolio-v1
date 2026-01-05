@@ -37,7 +37,7 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant}>
-        <p className={styles.sectionSubText}>Introduction</p>
+        {/* <p className={styles.sectionSubText}>Introduction</p> */}
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
@@ -45,13 +45,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-8 text-secondary text=[24px] leading-[30px] max-w-5xl"
       >
-        I am a skilled Machine Learning Engineer and Software Developer. I have
-        a strong background in Machine Learning, Deep Learning, Natural Language
-        Processing, and Computer Vision. I have worked on various projects in
-        these domains. I am also a competitive programmer and have a good grasp
-        of Data Structures and Algorithms. I am a quick learner and a team
-        player. I am always eager to learn new technologies and apply them to
-        solve real-world problems.
+        I am a <b>research Master's student</b> in the Department of Computer Science and Engineering at IIT Bombay, working at the intersection of <b>Multilingual NLP (MNLP), Machine Translation (MT), Grammar Error Correction (GEC), and Large Language Models (LLMs)</b>. 
+        My work addresses the core challenge of data scarcity in low-resource languages, where I design synthetic data generation methods, multilingual training strategies, and linguistically informed models to improve robustness and cross-lingual generalization.
+        I have contributed to large-scale, real-world <a href="https://www.cfilt.iitb.ac.in/mtsystem/translate" target="_blank" rel="noopener noreferrer"><u>MT systems</u></a> as part of <a href="https://bhashini.gov.in/" target="_blank" rel="noopener noreferrer"><u>Mission Bhashini</u></a>, a Government of India initiative, collaborating across multiple institutions to build and deploy <a href="https://github.com/cfiltnlp/Bhashini-IITB" target="_blank" rel="noopener noreferrer"><u>domain-adapted MT models</u></a> for diverse Indian languages. Alongside deployment-driven research, I have led foundational research in low-resource Indic GEC, resulting in <b>first-author publications</b> at top-tier NLP conferences.
+{/* Across these efforts, my goal is to build scalable, inclusive language technologies that bridge rigorous NLP research with real-world multilingual impact, enabling reliable language understanding and generation across linguistically diverse settings. */}
       </motion.p>
 
       <div className="flex flex-wrap gap-10 mt-20">

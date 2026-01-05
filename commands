@@ -4,8 +4,9 @@ npm create vite@latest  ./ --  --template react
 npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser framer-motion react-router-dom
 
 
-install tailwind css
-npm install -D tailwindcss postcss autoprefixer
+# install tailwind css
+# npm install -D tailwindcss postcss autoprefixer
+npm install --legacy-peer-deps tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 npm install --legacy-peer-deps react-typed
 

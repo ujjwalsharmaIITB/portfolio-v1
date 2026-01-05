@@ -43,16 +43,21 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "experience",
-    title: "Experiences",
-  },
-  {
     id: "education",
     title: "Education",
   },
   {
+    id: "publication",
+    title: "Publications",
+  },
+  {
+    id: "experience",
+    title: "Experiences",
+  },
+  
+  {
     id: "tech",
-    title: "Technologies & Projects",
+    title: "Technologies",
   },
   {
     id: "contact",
@@ -62,19 +67,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Software Developer",
+    title: "Avid NLP Researcher (In Training) ❤️",
     icon: web,
   },
   {
-    title: "Machine Learning Engineer",
-    icon: mobile,
-  },
-  {
-    title: "Web Developer",
+    title: "Occasional Software Developer  💻",
     icon: backend,
   },
   {
-    title: "Computer Science Student",
+    title: "AI/ML Engineer (Sorta, But Not Really!!) 🤖",
+    icon: mobile,
+  },
+  {
+    title: "Full Time Computer Science Student 📚",
     icon: creator,
   },
 ];
@@ -152,7 +157,7 @@ const experiences = [
   },
 
   {
-    title: "Software Engineer 1",
+    title: "Software Engineer I",
     company_name: "JP Morgan Chase & Co.",
     icon: jpmc_logo,
     iconBg: "#383E56",
@@ -173,7 +178,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "May 2021 - July 2021",
     points: [
-      "Full stack Developer ( Intern )",
+      "Full stack Developer (Intern)",
       "Developing and maintaining an internal web application using React.js and Spring Boot.",
       "Collaborating with cross-functional teams including designers and other developers to create the website.",
       "Participating in code reviews and providing constructive feedback to other developers.",
@@ -202,7 +207,7 @@ const educations = [
     iconBg: "#383E56",
     date: "July 2018 - May 2022",
     points: [
-      "B.Tech Student in Department Of Computer Science at IIT Bombay.",
+      "B.Tech Student in Department Of Computer Science at VNIT Nagpur.",
       "Gained Knowledge in the field of Computer Science and Engineering.",
       "Gained Knowledge and Experience in CS Fundamentals, Data Structures and Algorithms, Artificial Intelligence.",
       "Learned languages like C, C++, Java, Python, JavaScript, Scala.",
@@ -210,28 +215,28 @@ const educations = [
       "Also learned about various technologies like Git, Docker, Machine Learning, Deep Learning, Natural Language Processing, Blockchain, Cryptocurrency etc.",
     ],
   },
-  {
-    title: "12th - Science",
-    institute_name: "Gautam International Sr. Sec. School",
-    icon: gautam_logo,
-    iconBg: "#383E56",
-    date: "2017",
-    points: [
-      "Learned about various subjects like Physics, Chemistry, Mathematics.",
-      "Got intrested in Mathematics and Computer Science.",
-    ],
-  },
-  {
-    title: "10th - Science",
-    institute_name: "Gautam International Sr. Sec. School",
-    icon: gautam_logo,
-    iconBg: "#383E56",
-    date: "2015",
-    points: [
-      "Learned about various subjects like Physics, Chemistry, Mathematics, Biology, English, Hindi, Social Science.",
-      "Got intrested in Physics and Mathematics.",
-    ],
-  },
+  // {
+  //   title: "12th - Science",
+  //   institute_name: "Gautam International Sr. Sec. School",
+  //   icon: gautam_logo,
+  //   iconBg: "#383E56",
+  //   date: "2017",
+  //   points: [
+  //     "Learned about various subjects like Physics, Chemistry, Mathematics.",
+  //     "Got intrested in Mathematics and Computer Science.",
+  //   ],
+  // },
+  // {
+  //   title: "10th - Science",
+  //   institute_name: "Gautam International Sr. Sec. School",
+  //   icon: gautam_logo,
+  //   iconBg: "#383E56",
+  //   date: "2015",
+  //   points: [
+  //     "Learned about various subjects like Physics, Chemistry, Mathematics, Biology, English, Hindi, Social Science.",
+  //     "Got intrested in Physics and Mathematics.",
+  //   ],
+  // },
 ];
 
 
@@ -244,9 +249,10 @@ const publications = [
     author: "Ujjwal Sharma and Pushpak Bhattacharyya",
     booktitle: "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
     logo: emnlp_2025_logo,
-    date: "Nov, 2025",
-    iconBg: "#383E56",
-    place: "Abu Dhabi"
+    date: "November, 2025",
+    // off white
+    iconBg: "#F8F2E7",
+    place: "Suzhou, China"
   },
    {
     title: "Hi-GEC: Hindi Grammar Error Correction in Low Resource Scenario",
@@ -256,9 +262,10 @@ const publications = [
     author: "Ujjwal Sharma and Pushpak Bhattacharyya",
     booktitle: "Proceedings of the 31st International Conference on Computational Linguistics",
     logo: coling_2025_logo,
-    data: "Jan, 2025",
-    iconBg: "#383E56",
-    place: "Suzhou, China"
+    date: "January, 2025",
+    iconBg: "#F8F2E7",
+    place: "Abu Dhabi"
+
   }
 
 ]
@@ -368,4 +375,5 @@ export {
   educations,
   testimonials,
   projects,
+  publications
 };

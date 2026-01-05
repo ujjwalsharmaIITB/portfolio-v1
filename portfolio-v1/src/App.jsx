@@ -23,16 +23,16 @@ function App() {
             <Hero />
           </div>
           <About />
-          <div className="bg-experience-pattern">
-            <Experience />
-          </div>
           <div className="bg-education-pattern">
             <Education />
           </div>
           <Publication />
+          <div className="bg-experience-pattern">
+            <Experience />
+          </div>
           <Tech />
           <Works />
-          <Feedbacks />
+          {/* <Feedbacks /> */}
           <div className="relative z-0">
             <Contact />
             <StarsCanvas />
