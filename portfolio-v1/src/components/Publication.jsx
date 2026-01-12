@@ -51,8 +51,15 @@ const PublicationCard = ({ publication }) => {
       <div className="mt-5">
         <p className="text-white font-bold text-[18px]">Abstract:</p>
         <p className="text-secondary text-[14px] max-h-60 overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900"> {publication.abstract} </p>
+        <div className="flex space-x-4 mt-4">
+          {/* make both the links side by side */}
         {/* link to the paper */}
-        <p className="text-white font-bold text-[18px] mt-4"><a href={publication.url} target="_blank" rel="noopener noreferrer">Link to Paper</a></p>
+        <p className="text-white font-bold text-[18px]"><a href={publication.url} target="_blank" rel="noopener noreferrer">Link to Paper</a></p>
+        {/* link to slides */}
+        <p className="text-white font-bold text-[18px]"><a href={publication.slides} target="_blank" rel="noopener noreferrer">Link to Slides</a></p>
+        
+      </div>
+
       </div>
 
     </VerticalTimelineElement>

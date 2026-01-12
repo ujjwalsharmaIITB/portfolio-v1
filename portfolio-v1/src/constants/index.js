@@ -252,7 +252,8 @@ const publications = [
     date: "November, 2025",
     // off white
     iconBg: "#F8F2E7",
-    place: "Suzhou, China"
+    place: "Suzhou, China",
+    slides: "https://docs.google.com/presentation/d/1VbJU0n7PuGW3dGOei19dEH_gWbM_Yv57/edit?usp=sharing&ouid=115783687881154092892&rtpof=true&sd=true"
   },
    {
     title: "Hi-GEC: Hindi Grammar Error Correction in Low Resource Scenario",
@@ -264,8 +265,8 @@ const publications = [
     logo: coling_2025_logo,
     date: "January, 2025",
     iconBg: "#F8F2E7",
-    place: "Abu Dhabi"
-
+    place: "Abu Dhabi",
+    slides: "https://docs.google.com/presentation/d/1ZgaQL6C6N1yJTAw5Qal4Ecza7atn7oY8/edit?usp=sharing&ouid=115783687881154092892&rtpof=true&sd=true"
   }
 
 ]
