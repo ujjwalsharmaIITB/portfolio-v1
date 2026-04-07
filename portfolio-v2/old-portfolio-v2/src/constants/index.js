@@ -18,13 +18,6 @@ export const blogLinks = [
 
   },
   {
-    title: "Building a Transformer Model from Scratch",
-    description: "A step-by-step guide to implementing a Transformer model from scratch, covering the architecture, attention mechanism, and training process.",
-    url: "/~ujjwalsharma/blogs/transformers",
-    tag: "NLP",
-    readTime: "~25 min read"
-  },
-  {
     title: "LLM Training Pipeline",
     description: "A deep dive into training large language models from scratch — infra, data, and lessons learned.",
     url: "/~ujjwalsharma/blogs/llm-training",
@@ -47,6 +40,9 @@ export const services = [
   { title: "AI/ML Engineer",     subtitle: "(Sorta, But Not Really!!)", emoji: "🤖" },
   { title: "Full-Time CS Student", subtitle: "📚",                      emoji: "📚" },
 ];
+
+
+
 
 // ─── TECHNOLOGIES ─────────────────────────────────────────────────────────────
 export const technologies = [

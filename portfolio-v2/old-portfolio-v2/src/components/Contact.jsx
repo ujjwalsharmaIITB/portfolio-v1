@@ -56,29 +56,38 @@ export const CONTACTS = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 sm:py-28 px-5 sm:px-10 max-w-7xl mx-auto">
-      <div className="reveal flex items-center gap-3 mb-3">
+    <section id="contact" className="py-28 px-6 sm:px-10 max-w-7xl mx-auto">
+      <div className="reveal flex items-center gap-4 mb-4">
         <div className="section-divider" />
-        <span className="font-dm-mono text-[11px] tracking-widest uppercase" style={{ color: "var(--accent-violet)" }}>Let's Connect</span>
+        <span className="font-dm-mono text-xs text-purple-400 tracking-widest uppercase">Let's Connect</span>
       </div>
-      <h2 className="reveal font-syne font-extrabold text-3xl sm:text-5xl mb-3" style={{ color: "var(--text-primary)" }}>Contact</h2>
-      <p className="reveal font-dm-sans text-sm mb-10 sm:mb-14 max-w-md" style={{ color: "var(--text-muted)" }}>
-        Happy to chat about NLP research, collaborations, or just say hi.
+      <h2 className="reveal font-syne font-black text-4xl sm:text-5xl text-white mb-4">Contact</h2>
+      <p className="reveal text-gray-500 font-dm-sans text-sm mb-14 max-w-xl">
+        Always happy to chat about NLP research, collaborations, or just say hi. Reach out through any of the channels below.
       </p>
 
-      {/* 2-col on mobile, 4-col on lg */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {CONTACTS.map((c, i) => (
-          <a key={c.label} href={c.href}
-            target={c.href.startsWith("mailto") ? undefined : "_blank"} rel="noopener noreferrer"
-            className={`reveal reveal-delay-${i + 1} card-glass rounded-2xl p-4 sm:p-6 flex flex-col gap-3 sm:gap-4 group`}>
-            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center"
-              style={{ background: `${c.color}18`, border: `1px solid ${c.color}30`, color: c.color }}>
+          <a
+            key={c.label}
+            href={c.href}
+            target={c.href.startsWith("mailto") ? undefined : "_blank"}
+            rel="noopener noreferrer"
+            className={`reveal reveal-delay-${i + 1} card-glass rounded-2xl p-6 flex flex-col gap-4 group`}
+          >
+            <div
+              className="w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-300"
+              style={{
+                background: `${c.color}20`,
+                border: `1px solid ${c.color}30`,
+                color: c.color,
+              }}
+            >
               {c.icon}
             </div>
             <div>
-              <p className="font-dm-mono text-[10px] uppercase tracking-wider mb-1" style={{ color: "var(--text-muted)" }}>{c.label}</p>
-              <p className="font-syne font-semibold text-xs sm:text-sm break-all group-hover:opacity-80 transition-opacity" style={{ color: "var(--text-primary)" }}>
+              <p className="font-dm-mono text-xs text-gray-600 uppercase tracking-wider mb-1">{c.label}</p>
+              <p className="font-syne font-semibold text-white text-sm group-hover:text-violet-300 transition-colors break-all">
                 {c.value}
               </p>
             </div>
@@ -92,9 +101,12 @@ export default function Contact() {
         ))}
       </div>
 
-      <div className="mt-20 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3" style={{ borderTop: "1px solid var(--border-subtle)" }}>
-        <p className="font-dm-mono text-xs" style={{ color: "var(--text-muted)" }}>© {new Date().getFullYear()} Ujjwal Sharma · IIT Bombay</p>
-        <p className="font-dm-mono text-xs" style={{ color: "var(--text-muted)", opacity: 0.45 }}>
+      {/* Footer */}
+      <div className="mt-24 pt-8 border-t border-purple-900/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="font-dm-mono text-xs text-gray-600">
+          © {new Date().getFullYear()} Ujjwal Sharma · IIT Bombay
+        </p>
+        <p className="font-dm-mono text-xs text-gray-700">
           Built with ❤️ using React, Vite, and Tailwind by Ujjwal and Claude
         </p>
       </div>

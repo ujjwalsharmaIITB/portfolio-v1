@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -10,38 +10,35 @@ import Blogs from "./components/Blogs";
 import Contact from "./components/Contact";
 import { useScrollReveal } from "./hooks/useScrollReveal";
 
+const Divider = () => (
+  <div className="max-w-7xl mx-auto px-6 sm:px-10">
+    <div className="h-px" style={{ background: "var(--divider)" }} />
+  </div>
+);
+
 function App() {
   useScrollReveal();
 
   return (
-    <div className="relative z-0 bg-primary min-h-screen">
+    <div
+      className="relative z-0 min-h-screen"
+      style={{ background: "var(--bg-primary)", transition: "background 0.3s ease, color 0.3s ease" }}
+    >
       <Navbar />
       <Hero />
+      <Divider />
       <About />
-      {/* Subtle divider */}
-      <div className="max-w-7xl mx-auto px-6 sm:px-10">
-        <div className="h-px bg-gradient-to-r from-transparent via-purple-900/40 to-transparent" />
-      </div>
+      <Divider />
       <Education />
-      <div className="max-w-7xl mx-auto px-6 sm:px-10">
-        <div className="h-px bg-gradient-to-r from-transparent via-purple-900/40 to-transparent" />
-      </div>
+      <Divider />
       <Publication />
-      <div className="max-w-7xl mx-auto px-6 sm:px-10">
-        <div className="h-px bg-gradient-to-r from-transparent via-purple-900/40 to-transparent" />
-      </div>
+      <Divider />
       <Experience />
-      <div className="max-w-7xl mx-auto px-6 sm:px-10">
-        <div className="h-px bg-gradient-to-r from-transparent via-purple-900/40 to-transparent" />
-      </div>
+      <Divider />
       <Tech />
-      <div className="max-w-7xl mx-auto px-6 sm:px-10">
-        <div className="h-px bg-gradient-to-r from-transparent via-purple-900/40 to-transparent" />
-      </div>
+      <Divider />
       <Blogs />
-      <div className="max-w-7xl mx-auto px-6 sm:px-10">
-        <div className="h-px bg-gradient-to-r from-transparent via-purple-900/40 to-transparent" />
-      </div>
+      <Divider />
       <Contact />
     </div>
   );
