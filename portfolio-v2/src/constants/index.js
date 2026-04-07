@@ -20,14 +20,14 @@ export const blogLinks = [
   {
     title: "LLM Training Pipeline",
     description: "A deep dive into training large language models from scratch — infra, data, and lessons learned.",
-    url: "/llm-training",
+    url: "/blogs/llm-training",
     tag: "Infrastructure",
     readTime: "~20 min read",
   },
   {
     title: "SLURM for ML Researchers",
     description: "Practical SLURM instructions for running ML jobs on HPC clusters, with recipes and tips.",
-    url: "/slurm-instructions",
+    url: "/blogs/slurm-instructions",
     tag: "HPC",
     readTime: "~15 min read",
   },
