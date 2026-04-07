@@ -2,11 +2,14 @@ portfolio-v1
 npm create vite@latest  ./ --  --template react
 
 npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser framer-motion react-router-dom
+npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath  react-vertical-timeline-component @emailjs/browser framer-motion react-router-dom
+npm install react-parallax-tilt
 
 
 # install tailwind css
 # npm install -D tailwindcss postcss autoprefixer
 npm install --legacy-peer-deps tailwindcss postcss autoprefixer
+npm install -D tailwindcss postcss autoprefixer --legacy-peer-deps
 npx tailwindcss init -p
 npm install --legacy-peer-deps react-typed
 
@@ -24,7 +27,8 @@ wget https://drive.usercontent.google.com/download?id=1aubhurQhK-egx6NTzpnspTnLu
 # for deployment this is important
 
 To deploy with basepath
-  npm run build -- --base=/basepath
+  npm run build --base=/basepath
+  npm run build --base=/~ujjwalsharma
   or
   vite build --base=/basepath
 
