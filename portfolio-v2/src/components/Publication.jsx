@@ -9,7 +9,7 @@ const PublicationCard = ({ pub, index }) => {
       <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
         <div className="flex flex-wrap items-center gap-2">
           <span className="font-dm-mono text-xs font-bold px-3 py-1 rounded-lg"
-            style={{ background: `${pub.venueColor}18`, color: pub.venueColor, border: `1px solid ${pub.venueColor}35` }}>
+            style={{ background: `color-mix(in srgb, ${pub.venueColor} 10%, transparent)`, color: pub.venueColor, border: `1px solid color-mix(in srgb, ${pub.venueColor} 25%, transparent)` }}>
             {pub.venue}
           </span>
           <span className="font-dm-mono text-xs" style={{ color: "var(--text-muted)" }}>{pub.place} · {pub.date}</span>
@@ -70,13 +70,13 @@ const PublicationCard = ({ pub, index }) => {
 
 export default function Publication() {
   return (
-    <section id="publication" className="py-20 sm:py-28 px-5 sm:px-10 max-w-7xl mx-auto">
-      <div className="reveal flex items-center gap-3 mb-3">
+    <section id="publication" data-hue="lime" className="py-20 sm:py-28 w-[90%] sm:w-4/5 mx-auto">
+      <div className="reveal flex items-center justify-center gap-3 mb-3">
         <div className="section-divider" />
         <span className="font-dm-mono text-[11px] tracking-widest uppercase" style={{ color: "var(--accent-violet)" }}>Research Output</span>
       </div>
-      <h2 className="reveal font-syne font-extrabold text-3xl sm:text-5xl mb-2" style={{ color: "var(--text-primary)" }}>Publications</h2>
-      <p className="reveal font-dm-sans text-sm mb-10 sm:mb-14" style={{ color: "var(--text-muted)" }}>First-author publications at top-tier NLP venues.</p>
+      <h2 className="reveal font-syne text-center font-extrabold text-3xl sm:text-5xl mb-2" style={{ color: "var(--text-primary)" }}>Publications</h2>
+      <p className="reveal font-dm-sans text-sm text-center mb-10 sm:mb-14" style={{ color: "var(--text-muted)" }}>First-author publications at top-tier NLP venues.</p>
       <div className="space-y-5 sm:space-y-6">
         {publications.map((pub, i) => <PublicationCard key={pub.title} pub={pub} index={i} />)}
       </div>

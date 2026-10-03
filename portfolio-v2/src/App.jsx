@@ -11,8 +11,8 @@ import Contact from "./components/Contact";
 import { useScrollReveal } from "./hooks/useScrollReveal";
 
 const Divider = () => (
-  <div className="max-w-7xl mx-auto px-6 sm:px-10">
-    <div className="h-px" style={{ background: "var(--divider)" }} />
+  <div className="w-[90%] sm:w-4/5 mx-auto">
+    <div className="h-px flow-line" />
   </div>
 );
 
@@ -24,6 +24,7 @@ function App() {
       className="relative z-0 min-h-screen"
       style={{ background: "var(--bg-primary)", transition: "background 0.3s ease, color 0.3s ease" }}
     >
+      <div className="ambient" aria-hidden="true" />
       <Navbar />
       <Hero />
       <Divider />
@@ -33,11 +34,11 @@ function App() {
       <Divider />
       <Publication />
       <Divider />
+      <Blogs />
+      <Divider />
       <Experience />
       <Divider />
       <Tech />
-      <Divider />
-      <Blogs />
       <Divider />
       <Contact />
     </div>

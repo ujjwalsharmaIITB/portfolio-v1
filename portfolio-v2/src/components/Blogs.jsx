@@ -3,13 +3,13 @@ import { blogLinks } from "../constants";
 
 export default function Blogs() {
   return (
-    <section id="blogs" className="py-20 sm:py-28 px-5 sm:px-10 max-w-7xl mx-auto">
-      <div className="reveal flex items-center gap-3 mb-3">
+    <section id="blogs" data-hue="green" className="py-20 sm:py-28 w-[90%] sm:w-4/5 mx-auto">
+      <div className="reveal flex items-center justify-center gap-3 mb-3">
         <div className="section-divider" />
         <span className="font-dm-mono text-[11px] tracking-widest uppercase" style={{ color: "var(--accent-violet)" }}>Writing</span>
       </div>
-      <h2 className="reveal font-syne font-extrabold text-3xl sm:text-5xl mb-3" style={{ color: "var(--text-primary)" }}>Blogs</h2>
-      <p className="reveal font-dm-sans text-sm mb-10 sm:mb-14" style={{ color: "var(--text-muted)" }}>Technical write-ups from the trenches of ML research.</p>
+      <h2 className="reveal font-syne text-center font-extrabold text-3xl sm:text-5xl mb-3" style={{ color: "var(--text-primary)" }}>Blogs</h2>
+      <p className="reveal font-dm-sans text-sm text-center mb-10 sm:mb-14" style={{ color: "var(--text-muted)" }}>Technical write-ups from the trenches of ML research.</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
         {blogLinks.map((blog, i) => (
