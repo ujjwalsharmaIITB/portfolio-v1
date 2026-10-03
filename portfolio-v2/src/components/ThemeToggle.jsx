@@ -9,12 +9,12 @@ export default function ThemeToggle() {
     <button
       onClick={toggle}
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-      className="relative w-14 h-7 rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-500"
+      className="relative w-14 h-7 rounded-full transition-all duration-300 focus:outline-none "
       style={{
         background: isDark
-          ? "linear-gradient(135deg, #4c1d95, #1e3a5f)"
-          : "linear-gradient(135deg, #ddd6fe, #bae6fd)",
-        border: isDark ? "1px solid rgba(139,92,246,0.3)" : "1px solid rgba(109,40,217,0.2)",
+          ? "linear-gradient(135deg, #33291B, #1B170F)"
+          : "linear-gradient(135deg, #FFDE87, #FFC489)",
+        border: isDark ? "1px solid #54452C" : "1px solid #E7CCA4",
       }}
     >
       {/* Track icons */}
@@ -30,9 +30,9 @@ export default function ThemeToggle() {
         className="absolute top-0.5 w-6 h-6 rounded-full shadow-md transition-all duration-300 flex items-center justify-center text-xs"
         style={{
           left: isDark ? "calc(100% - 1.625rem)" : "0.125rem",
-          background: isDark ? "#7c3aed" : "#ffffff",
+          background: isDark ? "#E08536" : "#ffffff",
           boxShadow: isDark
-            ? "0 0 8px rgba(124,58,237,0.6)"
+            ? "0 0 8px rgba(224,133,54,0.6)"
             : "0 2px 8px rgba(0,0,0,0.15)",
         }}
       >

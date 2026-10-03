@@ -35,9 +35,9 @@ const Navbar = () => {
       }}
       className="fixed top-0 left-0 right-0 z-50"
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-10 flex items-center justify-between h-16">
+      <div className="w-[90%] sm:w-4/5 mx-auto flex items-center justify-between h-16">
         <a href="#" onClick={() => { setActive(""); window.scrollTo(0, 0); }} className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-cyan-400 flex items-center justify-center text-xs font-bold font-syne text-white flex-shrink-0">US</div>
+          <div style={{ background: "linear-gradient(135deg, var(--orange-mid), var(--gold-mid))", color: "#2B2118" }} className="w-8 h-8 rounded-lg flex items-center justify-center text-xs font-bold font-syne flex-shrink-0">US</div>
           <span className="font-syne font-bold text-base hidden sm:block tracking-tight" style={{ color: "var(--text-primary)" }}>
             Ujjwal Sharma<span style={{ color: "var(--accent-violet)" }} className="font-normal"> @IITB</span>
           </span>
@@ -72,7 +72,7 @@ const Navbar = () => {
             </button>
 
             {blogsOpen && (
-              <div className="absolute top-full right-0 mt-2 w-80 rounded-2xl overflow-hidden shadow-2xl" style={{ background: theme === "dark" ? "rgba(7,5,22,0.97)" : "rgba(255,255,255,0.97)", border: "1px solid var(--border-subtle)", backdropFilter: "blur(20px)" }}>
+              <div className="absolute top-full right-0 mt-2 w-80 rounded-2xl overflow-hidden shadow-2xl" style={{ background: "var(--bg-primary)", border: "1px solid var(--border-subtle)", backdropFilter: "blur(20px)" }}>
                 <div className="p-2">
                   {blogLinks.map((blog) => (
                     <a key={blog.url} href={blog.url} onClick={() => setBlogsOpen(false)}

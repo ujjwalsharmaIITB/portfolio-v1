@@ -4,19 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#050815",
-        secondary: "#9ca3af",
-        tertiary: "#0f0c29",
-        card: "#1a1640",
-        "accent-purple": "#7c3aed",
-        "accent-violet": "#8b5cf6",
-        "accent-cyan": "#06b6d4",
-        "accent-pink": "#ec4899",
+        primary: "#FFFDF7",
+        secondary: "#6A5A47",
+        tertiary: "#FFF8EC",
+        card: "#FFFFFF",
+        "accent-purple": "#AC4C0B",
+        "accent-violet": "#AC4C0B",
+        "accent-cyan": "#19659F",
+        "accent-pink": "#AC2F4E",
       },
       fontFamily: {
-        syne: ["Syne", "sans-serif"],
-        "dm-sans": ["DM Sans", "sans-serif"],
-        "dm-mono": ["DM Mono", "monospace"],
+        syne: ["Playfair Display", "Georgia", "serif"],
+        "dm-sans": ["Source Sans 3", "system-ui", "sans-serif"],
+        "dm-mono": ["Source Sans 3", "system-ui", "sans-serif"],
       },
       backgroundImage: {
         "hero-pattern":
