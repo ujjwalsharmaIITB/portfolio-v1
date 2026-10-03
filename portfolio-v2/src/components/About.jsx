@@ -17,20 +17,30 @@ const IdentityCard = ({ title, subtitle, emoji, index }) => (
 
 export default function About() {
   return (
-    <section id="about" className="py-20 sm:py-28 px-5 sm:px-10 max-w-7xl mx-auto">
-      <div className="reveal flex items-center gap-3 mb-3">
+    <section id="about" data-hue="orange" className="py-20 sm:py-28 w-[90%] sm:w-4/5 mx-auto">
+      <div className="reveal flex items-center justify-center gap-3 mb-3">
         <div className="section-divider" />
         <span className="font-dm-mono text-[11px] tracking-widest uppercase" style={{ color: "var(--accent-violet)" }}>Introduction</span>
       </div>
-      <h2 className="reveal font-syne font-extrabold text-3xl sm:text-5xl mb-8" style={{ color: "var(--text-primary)" }}>Overview</h2>
+      <h2 className="reveal font-syne text-center font-extrabold text-3xl sm:text-5xl mb-8" style={{ color: "var(--text-primary)" }}>Overview</h2>
 
-      <div className="reveal reveal-delay-1 max-w-5xl space-y-4">
+      <div className="reveal reveal-delay-1 space-y-4 text-center">
         <p className="font-dm-sans text-sm sm:text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
-          I am a <span className="font-semibold" style={{ color: "var(--text-primary)" }}>research Master's student</span> in CSE at IIT Bombay, working at the intersection of{" "}
+          I completed my <span className="font-semibold" style={{ color: "var(--text-primary)" }}>M.Tech. (Research)</span> in Computer Science and Engineering at IIT Bombay, where I was a Research Master's student at the{" "}
+          <a href="https://www.cfilt.iitb.ac.in/" target="_blank" rel="noopener noreferrer"
+            className="underline underline-offset-2" style={{ color: "var(--accent-cyan)" }}>CFILT Lab</a>{" "}
+          under the supervision of{" "}
+          <a href="https://www.cse.iitb.ac.in/~pb/" target="_blank" rel="noopener noreferrer"
+            className="underline underline-offset-2" style={{ color: "var(--accent-cyan)" }}>Prof. Pushpak Bhattacharyya</a>{" "}
+          and later{" "}
+          <a href="https://www.cse.iitb.ac.in/~sunita/" target="_blank" rel="noopener noreferrer"
+            className="underline underline-offset-2" style={{ color: "var(--accent-cyan)" }}>Prof. Sunita Sarawagi</a>.
+          My research focused on low-resource Indian languages, working at the intersection of{" "}
           <span className="font-semibold" style={{ color: "var(--accent-violet)" }}>Multilingual NLP (MNLP)</span>,{" "}
           <span className="font-semibold" style={{ color: "var(--accent-violet)" }}>Machine Translation (MT)</span>,{" "}
           <span className="font-semibold" style={{ color: "var(--accent-violet)" }}>Grammar Error Correction (GEC)</span>, and{" "}
           <span className="font-semibold" style={{ color: "var(--accent-violet)" }}>Large Language Models (LLMs)</span>.
+          I was awarded the <span className="font-semibold" style={{ color: "var(--text-primary)" }}>Institute Silver Medal</span> for M.Tech. in CSE as the most outstanding student in the programme.
         </p>
         <p className="font-dm-sans text-sm sm:text-base leading-relaxed" style={{ color: "var(--text-secondary)" }}>
           My work addresses data scarcity in low-resource languages through synthetic data generation methods and linguistically informed models. I have contributed to large-scale{" "}
@@ -44,7 +54,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className="mt-10 sm:mt-14 flex flex-wrap gap-3 sm:gap-4">
+      <div className="mt-10 sm:mt-14 flex flex-wrap justify-center gap-3 sm:gap-4">
         {services.map((s, i) => <IdentityCard key={s.title} {...s} index={i} />)}
       </div>
     </section>

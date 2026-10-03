@@ -1,3 +1,11 @@
+import microsoftLogo from "../assets/logos/microsoft.svg";
+import cfiltLogo from "../assets/logos/cfilt.png";
+import jpmcLogo from "../assets/logos/jpmc.jpg";
+import earlysalaryLogo from "../assets/logos/earlysalary.webp";
+import iitbLogo from "../assets/logos/iitb.png";
+import vnitLogo from "../assets/logos/vnit.jpeg";
+import bodhanLogo from "../assets/logos/bodhan.png";
+
 // ─── NAV LINKS ────────────────────────────────────────────────────────────────
 export const navLinks = [
   { id: "about",       title: "About" },
@@ -20,21 +28,21 @@ export const blogLinks = [
   {
     title: "Building a Transformer Model from Scratch",
     description: "A step-by-step guide to implementing a Transformer model from scratch, covering the architecture, attention mechanism, and training process.",
-    url: "/~ujjwalsharma/blogs/transformers",
+    url: "/~ujjwalsharma/blogs/transformers/",
     tag: "NLP",
     readTime: "~25 min read"
   },
   {
     title: "LLM Training Pipeline",
     description: "A deep dive into training large language models from scratch — infra, data, and lessons learned.",
-    url: "/~ujjwalsharma/blogs/llm-training",
+    url: "/~ujjwalsharma/blogs/llm-training/",
     tag: "Infrastructure",
     readTime: "~20 min read",
   },
   {
     title: "SLURM for ML Researchers",
     description: "Practical SLURM instructions for running ML jobs on HPC clusters, with recipes and tips.",
-    url: "/~ujjwalsharma/blogs/slurm-instructions",
+    url: "/~ujjwalsharma/blogs/slurm-instructions/",
     tag: "HPC",
     readTime: "~15 min read",
   },
@@ -71,11 +79,13 @@ export const educations = [
   {
     degree: "M.Tech — Computer Science & Engineering",
     institute: "IIT Bombay",
-    period: "July 2023 – Present",
+    period: "July 2023 – August 2026",
     location: "Mumbai, India",
     logoInitials: "IITB",
-    logoColor: "#1e3a8a",
+    logo: iitbLogo,
+    logoColor: "#19659F",
     points: [
+      "Awarded the Institute Silver Medal for M.Tech. in CSE — most outstanding student in the programme.",
       "Research student at CFILT (Centre for Indian Language Technology).",
       "Focus: Multilingual NLP, GEC, Machine Translation, and LLMs.",
       "Active participant in cultural and academic events.",
@@ -87,7 +97,8 @@ export const educations = [
     period: "July 2018 – May 2022",
     location: "Nagpur, India",
     logoInitials: "VNIT",
-    logoColor: "#7c3aed",
+    logo: vnitLogo,
+    logoColor: "#AC4C0B",
     points: [
       "Grounding in CS fundamentals, DSA, AI, and software engineering.",
       "Proficiency in C, C++, Java, Python, JavaScript, Scala.",
@@ -99,11 +110,34 @@ export const educations = [
 // ─── EXPERIENCES ──────────────────────────────────────────────────────────────
 export const experiences = [
   {
+    title: "Research Engineer",
+    company: "Bodhan.AI",
+    period: "June 2026 – Present",
+    logoInitials: "BA",
+    logoColor: "#AC4C0B",
+    logo: bodhanLogo,
+    points: [
+      "Research Engineer at Bodhan.AI, an IIT Madras-incubated centre for AI in education.",
+      "Working on multilinguality, reinforcement learning, and agents.",
+      "First project: Indic Translate, Bodhan's machine translation model for Indian languages.",
+    ],
+  },
+  {
+    title: "Applied Scientist",
+    company: "Microsoft",
+    period: "June 2026",
+    logoInitials: "MS",
+    logoColor: "#19659F",
+    logo: microsoftLogo,
+    points: [],
+  },
+  {
     title: "Research Student",
     company: "CFILT — IIT Bombay",
-    period: "July 2023 – Present",
+    period: "July 2023 – August 2026",
     logoInitials: "CFILT",
-    logoColor: "#7c3aed",
+    logo: cfiltLogo,
+    logoColor: "#AC4C0B",
     points: [
       "Researching Multilingual GEC, Machine Translation, and LLMs.",
       "Built and deployed domain-adapted MT models for Indian languages under Mission Bhashini.",
@@ -116,7 +150,8 @@ export const experiences = [
     company: "JP Morgan Chase & Co.",
     period: "August 2022 – July 2023",
     logoInitials: "JPMC",
-    logoColor: "#1e3a8a",
+    logo: jpmcLogo,
+    logoColor: "#19659F",
     points: [
       "Developed Big Data applications using Hadoop and Spark.",
       "Collaborated with cross-functional teams on high-quality products.",
@@ -126,10 +161,11 @@ export const experiences = [
   },
   {
     title: "Software Engineer Intern",
-    company: "EarlySalary",
+    company: "Fibe (formerly EarlySalary)",
     period: "May 2021 – July 2021",
     logoInitials: "ES",
-    logoColor: "#059669",
+    logo: earlysalaryLogo,
+    logoColor: "#227142",
     points: [
       "Full-stack intern building internal web apps with React.js & Spring Boot.",
       "Collaborated on design and code reviews with cross-functional teams.",
@@ -142,7 +178,7 @@ export const publications = [
   {
     title: "IndiGEC: Multilingual Grammar Error Correction for Low-Resource Indian Languages",
     venue: "EMNLP 2025",
-    venueColor: "#7c3aed",
+    venueColor: "var(--orange)",
     place: "Suzhou, China",
     date: "November 2025",
     authors: "Ujjwal Sharma and Pushpak Bhattacharyya",
@@ -155,7 +191,7 @@ export const publications = [
   {
     title: "Hi-GEC: Hindi Grammar Error Correction in Low Resource Scenario",
     venue: "COLING 2025",
-    venueColor: "#0891b2",
+    venueColor: "var(--blue)",
     place: "Abu Dhabi",
     date: "January 2025",
     authors: "Ujjwal Sharma and Pushpak Bhattacharyya",

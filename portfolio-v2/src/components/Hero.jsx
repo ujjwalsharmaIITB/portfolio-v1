@@ -74,15 +74,15 @@ export default function Hero() {
         {/* Name — capped so it never wraps weirdly on mobile */}
         <h1 className="font-syne font-extrabold leading-[1.07] mb-5 animate-fade-up"
           style={{ fontSize: "clamp(2.6rem, 10vw, 5.5rem)", animationDelay: "0.1s", color: "var(--text-primary)" }}>
-          UJJWAL<br />
-          <span className="gradient-text">SHARMA</span>
+          <span className="gradient-text">UJJWAL</span><br />
+          SHARMA
         </h1>
 
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-7 animate-fade-in"
           style={{ border: "1px solid var(--border-subtle)", background: "var(--tag-bg)" }}>
           <span className="glow-dot" />
           <span className="font-dm-mono text-[11px] sm:text-xs tracking-widest" style={{ color: "var(--tag-text)" }}>
-            Research Master's Student · IIT Bombay
+            Research Master's Student · Institute Medalist (CSE) · IIT Bombay
           </span>
         </div>
 

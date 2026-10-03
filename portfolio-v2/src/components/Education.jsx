@@ -3,12 +3,12 @@ import { educations } from "../constants";
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 sm:py-28 px-5 sm:px-10 max-w-7xl mx-auto">
-      <div className="reveal flex items-center gap-3 mb-3">
+    <section id="education" data-hue="gold" className="py-20 sm:py-28 w-[90%] sm:w-4/5 mx-auto">
+      <div className="reveal flex items-center justify-center gap-3 mb-3">
         <div className="section-divider" />
         <span className="font-dm-mono text-[11px] tracking-widest uppercase" style={{ color: "var(--accent-violet)" }}>Background</span>
       </div>
-      <h2 className="reveal font-syne font-extrabold text-3xl sm:text-5xl mb-10 sm:mb-14" style={{ color: "var(--text-primary)" }}>Education</h2>
+      <h2 className="reveal font-syne text-center font-extrabold text-3xl sm:text-5xl mb-10 sm:mb-14" style={{ color: "var(--text-primary)" }}>Education</h2>
 
       <div className="space-y-5">
         {educations.map((edu, i) => (
@@ -16,7 +16,7 @@ export default function Education() {
             {/* Logo — always visible, left column */}
             <div className="w-14 h-14 rounded-xl flex items-center justify-center font-syne font-bold text-white text-xs flex-shrink-0"
               style={{ background: `linear-gradient(135deg, ${edu.logoColor}cc, ${edu.logoColor}55)`, border: `1px solid ${edu.logoColor}44` }}>
-              {edu.logoInitials}
+              {edu.logo ? <img src={edu.logo} alt={edu.institute} className="w-full h-full object-contain p-1.5 rounded-xl bg-white" /> : edu.logoInitials}
             </div>
 
             {/* Content — right column */}
